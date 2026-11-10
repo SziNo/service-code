@@ -1,0 +1,17 @@
+# Steps 2-3. Runs on every push to main (a merged PR is a push to main).
+name: Build and push
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: TODO
+        run: |
+          echo "TODO: run the tests again"
+          echo "TODO: read the version from pyproject.toml"
+          echo "TODO: log in to AWS (OIDC, no access keys) and to ECR"
+          echo "TODO: build the image, tag it with the version, push it to ECR"

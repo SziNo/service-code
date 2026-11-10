@@ -1,0 +1,16 @@
+# Step 2. Runs on every pull request to main. Make it fail when the code is broken.
+name: PR checks
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: TODO
+        run: |
+          echo "TODO: check out the code"
+          echo "TODO: run the tests"
+          echo "TODO: build the image, but don't push it"
